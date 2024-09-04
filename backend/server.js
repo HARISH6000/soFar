@@ -17,6 +17,10 @@ connectDB();
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
 
+const journalRoutes = require('./routes/journal');
+app.use('/api/journal', journalRoutes);
+
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });

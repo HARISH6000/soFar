@@ -1,0 +1,62 @@
+/* General body styling for black theme */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Form styling */
+form {
+    background-color: #1a1a1a; /* Dark gray background */
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 600px; /* Increase max-width */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Input field styling */
+input {
+    background-color: #333; /* Slightly lighter gray for input fields */
+    border: none;
+    color: #fff;
+    padding: 12px;
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Blue button background */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:active {
+    background-color: #003d7a; /* Even darker blue when button is clicked */
+}

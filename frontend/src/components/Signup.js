@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
     const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ const Signup = () => {
         email: '',
         password: '',
     });
+
+    const navigate = useNavigate();
 
     const { username, email, password } = formData;
 
@@ -19,6 +22,7 @@ const Signup = () => {
         try {
             const res = await axios.post('http://localhost:5000/api/auth/register', formData);
             alert(res.data.message);
+            navigate('/journal');
         } catch (err) {
             console.error(err.response.data);
         }
